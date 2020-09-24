@@ -50,7 +50,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="posterLabel" destination="cIH-Da-M2E" id="zAH-sB-38F"/>
+                                            <outlet property="posterView" destination="cIH-Da-M2E" id="KcD-Ej-QOV"/>
                                             <outlet property="summaryLabel" destination="pm9-R1-q6i" id="Gfx-na-cTe"/>
                                             <outlet property="titleLabel" destination="ODO-2g-xfq" id="3YO-sb-dcP"/>
                                         </connections>

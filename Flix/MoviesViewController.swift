@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -52,6 +53,19 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         cell.titleLabel.text = title
         cell.summaryLabel.text = summary
+        
+        let baseUrl = "https://image.tmdb.org/t/p/w185"
+        
+     //check if the movie contains an image
+        if let posterPath = movie["poster_path"] as? String {
+            let posterUrl = URL(string: baseUrl + posterPath)!
+            cell.posterView.af.setImage(withURL: posterUrl)
+        }
+        else {
+           // No poster image. Can either set to nil (no image) or a default movie poster image
+           // that you include as an asset
+           cell.posterView.image = nil
+        }
         
         return cell
     }
