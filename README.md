@@ -26,3 +26,4 @@ GIF created with [Recordit](https://recordit.co).
 
 ### Notes
 Describe any challenges encountered while building the app.
+I mostly had errors that were internal and neither I nor the TAs were able to figure out. So, I had to recreate the project on many occassions. My biggest challenge was just getting started. At first I started with SwiftUI and not realizing it since I'm not familiar with iOS development, and I apparently wasn't paying enough attention in class, I just struggled for a day or two figuring out why Main.storyboard and LaunchScreen.storyboard weren't already configured. But once I figured all of that out, it was a breeze from there!
