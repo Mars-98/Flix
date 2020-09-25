@@ -9,8 +9,6 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 ## Flix Part 1
 
 ### User Stories
-`TODO://` In the **User Stories section below**, add an `x` in the `-[ ]` like this `- [x]` for any user story you complete. (🚫 Remove this paragraph after checking off completed user stories)
-
 #### REQUIRED (10pts)
 - [x] (2pts) User sees an app icon on the home screen and a styled launch screen.
 - [x] (5pts) User can view and scroll through a list of movies now playing in theaters.
@@ -18,12 +16,14 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 #### BONUS
 - [x] (2pt) User can view the app on various device sizes and orientations.
-- [ ] (1pt) Run your app on a real device.
+- [x] (1pt) Run your app on a real device.
 
 ### App Walkthrough GIF
-`TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
 
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+<img src="https://recordit.co/vWJecVvBIu.gif" title='Video Walkthrough' width='250'/>
+
+GIF created with [Recordit](https://recordit.co).
 
 ### Notes
 Describe any challenges encountered while building the app.
+I mostly had errors that were internal and neither I nor the TAs were able to figure out. So, I had to recreate the project on many occassions. My biggest challenge was just getting started. At first I started with SwiftUI and not realizing it since I'm not familiar with iOS development, and I apparently wasn't paying enough attention in class, I just struggled for a day or two figuring out why Main.storyboard and LaunchScreen.storyboard weren't already configured. But once I figured all of that out, it was a breeze from there!
