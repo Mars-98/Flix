@@ -1,14 +1,14 @@
 //
-//  MovieDetailsViewController.swift
+//  MovieDetailsCollectionViewController.swift
 //  Flix
 //
-//  Created by Mariam Adams on 9/28/20.
+//  Created by Mariam Adams on 9/30/20.
 //
 
 import UIKit
 import AlamofireImage
 
-class MovieDetailsViewController: UIViewController {
+class MovieDetailsCollectionViewController: UIViewController {
     
     @IBOutlet weak var backdropView: UIImageView!
     @IBOutlet weak var posterView: UIImageView!
@@ -16,13 +16,13 @@ class MovieDetailsViewController: UIViewController {
     @IBOutlet weak var summaryLabel: UILabel!
     @IBOutlet weak var releaseDateLabel: UILabel!
     
-    
     var movie: [String:Any]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        
         titleLabel.text = movie["title"] as? String
         titleLabel.sizeToFit()
         summaryLabel.text = movie["overview"] as? String
@@ -53,9 +53,7 @@ class MovieDetailsViewController: UIViewController {
             // that you include as an asset
             backdropView.image = nil
         }
-        
     }
-    
     
     /*
      // MARK: - Navigation
@@ -66,5 +64,4 @@ class MovieDetailsViewController: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
-    
 }

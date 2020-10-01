@@ -50,15 +50,6 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         }
         task.resume()
     }
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return movies.count
@@ -84,4 +75,29 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         
         return cell
     }
+    
+    
+     // MARK: - Navigation
+     //I need to prepare the class to pass data into the MovieDetailsCollectionViewController
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+        
+        //sender is the cell itself
+        //find the selected movie
+        let cell = sender as! UICollectionViewCell
+        let indexPath = collectionView.indexPath(for: cell)!
+        let movie = movies[indexPath.item]
+        
+        //pass the selected movie to the details Collection view controller
+        
+        let detailsViewController = segue.destination as! MovieDetailsCollectionViewController
+        detailsViewController.movie = movie
+        
+        //this is done so after navigating back to the tableview, the cell isn't highlighted dark grey
+        //(in other words, not selected)
+        collectionView.deselectItem(at: indexPath, animated: true)
+     }
+     
 }
