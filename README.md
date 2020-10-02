@@ -23,6 +23,8 @@ GIF created with [Recordit](https://recordit.co).
 ### Notes
 Describe any challenges encountered while building the app.
 
+No struggles doing anything, except I tried to present a trailer modally and I just could not figure it out :/ 
+
 ---
 
 ## Flix Part 1
